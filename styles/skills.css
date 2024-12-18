@@ -1,0 +1,48 @@
+.skills {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px 10%;
+    min-width: 525px;
+}
+.title {
+    font-size: 60px;
+    font-weight: bold;
+}
+.languagelist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 80vw;
+    justify-items: center;
+}
+.skillimage {
+    height: 100px;
+    margin: 20px;
+}
+.skillimage:hover {
+    cursor: pointer;
+}
+
+
+.subtitle {
+    margin: 10px 0px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.tflist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80vw;
+    justify-items: center;
+}
+
+@media (max-width: 950px) {
+    .languagelist {
+        grid-template-columns:1fr 1fr 1fr;
+        min-width: 420px;
+    } 
+}

@@ -1,0 +1,81 @@
+.home {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px 10%;
+    min-width: 525px;
+}
+.home-left {
+    margin-bottom: 30px;
+}
+.home .home-left p {
+    width: 400px;
+    font-weight: bold;
+    font-size: min(10vw, 100px);
+}
+.home .home-left p span {
+    color: darkcyan;
+}
+.comp-person {
+    width: 50vw;
+    height: auto;
+    max-width: 600px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+.resume-link {
+    background-color: rgb(232, 232, 232);
+    padding: 1vw;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 2.5vw;
+    transition: scale 0.5s;
+}
+.resume-link:hover {
+    scale: 120%;
+} 
+
+.rlp {
+    color: rgb(0, 0, 0);
+    font-size: clamp(14px, 1.7vw, 32px);
+    font-weight: bold;
+    opacity: 80%;
+}
+.other_links {
+    display: flex;
+}
+.other_links a {
+    display: flex;
+    align-items: center;
+    margin-right: 2vw;
+    text-decoration: none;
+    transition: scale 0.5s;
+}
+.other_links a:hover {
+    scale: 170%;
+}
+.other_links a img{
+    width: 2.5vw;
+    min-width: 18px;
+}
+
+@media (max-width: 1200px) {
+    .home {
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home-left{
+        width: 60vw;
+    }
+    .home .home-left p {
+        width: 60vw;
+        margin-bottom: 10px;
+    }
+}

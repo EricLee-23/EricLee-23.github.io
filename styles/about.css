@@ -1,0 +1,21 @@
+.about {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px 10%;
+    min-width: 525px;
+}
+
+.abouttop {
+    font-size: 5vw;
+    margin: 32px 0px;
+}
+
+.aboutbottom {
+    font-size: clamp(16px, 2vw, 26px);
+    
+    text-indent: 52px;
+}

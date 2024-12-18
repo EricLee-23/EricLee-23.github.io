@@ -1,0 +1,15 @@
+.experience {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px 10%;
+    min-width: 525px;
+}
+.etitle {
+    font-size: 60px;
+    font-weight: bold;
+}
+
