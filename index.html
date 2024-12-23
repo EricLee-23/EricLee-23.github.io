@@ -16,117 +16,94 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <script src="/scripts.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-        <nav>
-            <img class="logo" src="/images/my_name.png" alt="Eric Lee">
-            <ul id="menu-list" class="menu-list">
-                <li><a href="#homeid">Home</a></li>
-                <li><a href="#aboutid">About</a></li>
-                <li><a href="#skillsid">Skills</a></li>
-                <!--
-                <li><a href="#experienceid">Experience</a></li>
-                -->
-            </ul>
-            <img class="user-pic" src="/images/mango.png" onclick="toggleMenu()">
-            <div class="sub-menu-wrap" id="subMenu">
-                <div class="sub-menu">
-                    <div class="user-info">
-                        <img src="/images/mango.png" alt="mango">
-                        <h2>Eric Lee</h2>
-                    </div>
-                    <hr>
-                    <div class="sub-menu-list">
-                        <a href="#homeid">Home</a>
-                        <a href="#aboutid">About</a>
-                        <a href="#skillsid">Skills</a>
-                        <!--
-                        <a href="#experienceid">Experience</a>
-                        -->
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="home" id="homeid">
-            <div class="home-left">
-                <p>Hi, I am <span>Eric</span></p>
-                <div class="links">
-                        <a href="https://github.com/EricLee-23" target="_blank">
-                            <img src="/images/github-icon.png" alt="">
-                        </a>
-                        <a href="mailto:ericjlee23@gmail.com">
-                            <img src="/images/gmail-icon.png" alt="">
-                        </a>
-                        <a href="https://www.linkedin.com/in/eric-lee-12e/" target="_blank">
-                            <img src="/images/linkedin-icon.png" alt="">
-                        </a>
-                        <a href="https://leetcode.com/u/CodingMango23/" target="_blank">
-                            <img src="/images/leetcode-icon.webp" alt="">
-                        </a>
-                </div>
-            </div>
-            <div class="home-right">
-                <img class="comp-person" src="/images/person_computer.webp" alt="">
-            </div>
+    <nav id="nav">
+        <h1>Eric Lee</h1>
+        <div>
+            <label class="toggle-switch square">
+                <input id="checkbox" type="checkbox" onclick="toggleLDMode()">
+                <img src="/images/darkmode.svg" class="slider-image" id="slider-image"/>
+            </label>
         </div>
-        <div class="about" id="aboutid">
-            <div class="about_canvas">
-                <p class="abouttop">
-                    About Me
-                </p>
-                <div class="aboutbottom">
-                    <p>
-                        I’m motivated to get an internship because I’m eager to start applying the skills I’ve gained in a real-world setting. Collaborating with others who share similar goals to develop better products is incredibly exciting to me. I’m particularly looking forward to learning from experienced professionals and tackling challenging projects. Not only will this help me grow as an individual, but it will also allow me to contribute to the collective success of the team and the company’s objectives.
-                    </p>
-                    <br>
-                    <p>
-                        From my next internship, I hope to gain deeper insight into the industry to better understand what I want to pursue in my future career. My academic background, previous internship, and passion for programming have allowed me to explore different areas, but I’d like to determine more specifically what kind of programmer I want to be—whether that’s frontend, backend, data science, AI, cloud, or something else. Additionally, I hope to strengthen my collaborative skills, particularly in programming environments, and build meaningful relationships with mentors and fellow interns that can guide my career development.
-                    </p>
-                    <br>
-                    <p>
-                        The type of work I find most rewarding is tackling a challenging task, especially when it feels difficult at first. I enjoy the process of working through the problem, researching potential solutions, and discussing ideas with others to find the best approach. The most fulfilling part is finally solving the issue, knowing that my hard work and determination paid off. Contributing to a project in this way not only enhances my problem-solving skills but also gives me a sense of accomplishment as I see how my efforts positively impact the team and the overall project.
-                    </p>
+        <div class="menu" id="menu">
+            <div id="outerMenu" class="outerMenu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+            </div>
+            <img id="subMenu_icon" class="subMenu_icon" src="/images/lightmenu.svg" onclick="toggleMenu()">
+            <div id="subMenu" class="subMenu">
+                <div class="user-info">
+                    <h2>Eric Lee</h2>
+                </div>
+                <hr>
+                <div class="subMenu_list">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
                 </div>
             </div>
         </div>
-        <div class="skills" id="skillsid">
-            <div class="skillscanvas">
-                <p class="title">My Skills</p>
-                <br>
-                <p class="subtitle">LANGUAGES</p>
-                <div class="languagelist">
-                    <img class="skillimage" src="/images/python.webp" title="Python">
-                    <img class="skillimage" src="/images/java.png" title="Java">
-                    <img class="skillimage" src="/images/sql.png" title="SQL">
-                    <img class="skillimage" src="/images/javascript.png" title="JavaScript">
-                    <img class="skillimage" src="/images/css.png" title="CSS">
-                    <img class="skillimage" src="/images/html.png" title="HTML">
-                </div>
-                <br>
-                <br>
-                <p class="subtitle">TECHNOLOGIES AND FRAMEWORKS</p>
-                <div class="tflist">
-                    <img class="skillimage" src="/images/git.png" title="Git">
-                    <img class="skillimage" src="/images/flutter.png" title="Flutter">
-                    <img class="skillimage" src="/images/mysql.png" title="MySQL">
-                </div>
-            </div>
+    </nav>
+    <div class="home" id="home">
+            <h1>Hi, I am <span>Eric Lee</span></h1>
+            <p>I am a computer science student at UW Madison ready to contribute to your company</p>
+            <div class="links">
+                <a href="https://github.com/EricLee-23" target="_blank">
+                    <img src="/images/github-icon.png" alt="">
+                </a>
+                <a href="mailto:ericjlee23@gmail.com">
+                    <img src="/images/gmail-icon.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/eric-lee-12e/" target="_blank">
+                    <img src="/images/linkedin-icon.png" alt="">
+                </a>
+                <a href="https://leetcode.com/u/CodingMango23/" target="_blank">
+                     <img src="/images/leetcode-icon.webp" alt="">
+                </a>
         </div>
-        <!--
-        <div class="experience" id="experienceid">
-            <div class="experiencecanvas">
-                <p class="etitle">My Experience</p>
-            </div>
+    </div>
+    
+    <div class="about" id="about">
+        <h1>About Me</h1>
+        <div class="aboutbottom">
+            <p>
+                I’m motivated to get an internship because I’m eager to start applying the skills I’ve gained in a real-world setting. Collaborating with others who share similar goals to develop better products is incredibly exciting to me. I’m particularly looking forward to learning from experienced professionals and tackling challenging projects. Not only will this help me grow as an individual, but it will also allow me to contribute to the collective success of the team and the company’s objectives.
+            </p>
+            <br>
+            <p>
+                From my next internship, I hope to gain deeper insight into the industry to better understand what I want to pursue in my future career. My academic background, previous internship, and passion for programming have allowed me to explore different areas, but I’d like to determine more specifically what kind of programmer I want to be—whether that’s frontend, backend, data science, AI, cloud, or something else. Additionally, I hope to strengthen my collaborative skills, particularly in programming environments, and build meaningful relationships with mentors and fellow interns that can guide my career development.
+            </p>
+            <br>
+            <p>
+                The type of work I find most rewarding is tackling a challenging task, especially when it feels difficult at first. I enjoy the process of working through the problem, researching potential solutions, and discussing ideas with others to find the best approach. The most fulfilling part is finally solving the issue, knowing that my hard work and determination paid off. Contributing to a project in this way not only enhances my problem-solving skills but also gives me a sense of accomplishment as I see how my efforts positively impact the team and the overall project.
+            </p>
         </div>
-        -->
-<script>
-    let subMenu = document.getElementById('subMenu');
-    let menu_list = document.getElementById('menu-list');
-    function toggleMenu() {
-        subMenu.classList.toggle("open-menu")
-        menu_list.classList.toggle("close")
-    }
-</script>
+    </div>
+    <div class="skills" id="skills">
+            <h1>My Skills</h1>
+            <br>
+            <h2>Languages</h2>
+            <div class="languagelist">
+                <img class="skillimage" src="/images/python.webp" title="Python">
+                <img class="skillimage" src="/images/java.png" title="Java">
+                <img class="skillimage" src="/images/sql.png" title="SQL">
+                <img class="skillimage" src="/images/javascript.png" title="JavaScript">
+                <img class="skillimage" src="/images/css.png" title="CSS">
+                <img class="skillimage" src="/images/html.png" title="HTML">
+            </div>
+            <br>
+            <br>
+            <h2>Technologies and Frameworks</h2>
+            <div class="tflist">
+                <img class="skillimage" src="/images/git.png" title="Git">
+                <img class="skillimage" src="/images/flutter.png" title="Flutter">
+                <img class="skillimage" src="/images/mysql.png" title="MySQL">
+            </div>
+    </div>
 </body>
 </html>

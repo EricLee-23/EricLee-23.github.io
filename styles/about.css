@@ -1,18 +1,11 @@
 .about {
-    background-color: lightcoral;
+    background-color: var(--background-color);
+    color: var(--text-color);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
-    padding: 50px 10%;
-}
-
-.abouttop {
-    font-size: 10vw;
-    margin-bottom: 32px;
-}
-
-.aboutbottom {
-    font-size: clamp(24px, 2vw, 26px);
-    text-indent: 52px;
+    height: auto;
+    padding: 50px;
+    min-height: 100vh;
+    justify-content: center;
 }
