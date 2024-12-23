@@ -30,9 +30,7 @@
 }
 
 .tflist {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
+    display: flex;
     justify-items: center;
     align-items: center;
 }
