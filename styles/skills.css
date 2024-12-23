@@ -34,7 +34,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     justify-items: center;
-    margin-bottom: 50px;
+    align-items: center;
 }
 
 @media (max-width: 900px) {
