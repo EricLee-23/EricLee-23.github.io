@@ -22,7 +22,7 @@ function toggleLDMode() {
 function toggleMenu() {
     let subMenu = document.getElementById("subMenu");
     if (subMenu.style.height == "0px") {
-        subMenu.style.height = "150px";
+        subMenu.style.height = "200px";
     }
     else {
         subMenu.style.height = "0px";
