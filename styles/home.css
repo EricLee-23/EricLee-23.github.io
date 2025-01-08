@@ -27,3 +27,218 @@
 .links a img:hover {
     transform: scale(1.5);
 }
+
+.word-carousel:after {
+    content: "D";
+    animation: 12s infinite word-carousel;
+    background-color: darkgoldenrod;
+    padding: 2px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+@keyframes word-carousel {
+    1% {
+        content: "De";
+    }
+    2% {
+        content: "Dev";
+    }
+    3% {
+        content: "Deve";
+    }
+    4% {
+        content: "Devel";
+    }
+    5% {
+        content: "Develo";
+    }
+    6% {
+        content: "Develop";
+    }
+    7% {
+        content: "Develop";
+    }
+    8% {
+        content: "Develope";
+    }
+    9% {
+        content: "Developer";
+    }
+    17% {
+        content: "Developer";
+    }
+    18% {
+        content: "Develope";
+    }
+    19% {
+        content: "Develop";
+    }
+    20% {
+        content: "Develo";
+    }
+    21% {
+        content: "Devel";
+    }
+    22% {
+        content: "Deve";
+    }
+    23% {
+        content: "Dev";
+    }
+    24% {
+        content: "De";
+    }
+    25% {
+        content: "D";
+    }
+    24% {
+        content: "D";
+    }
+    30% {
+        content: "Do";
+    }
+    31% {
+        content: "Dog";
+    }
+    32% {
+        content: "Dog ";
+    }
+    33% {
+        content: "Dog L";
+    }
+    34% {
+        content: "Dog Lo";
+    }
+    35% {
+        content: "Dog Lov";
+    }
+    36% {
+        content: "Dog Love";
+    }
+    37% {
+        content: "Dog Lover";
+    }
+    45% {
+        content: "Dog Lover";
+    }
+    46% {
+        content: "Dog Love";
+    }
+    47% {
+        content: "Dog Lov";
+    }
+    48% {
+        content: "Dog Lo";
+    }
+    49% {
+        content: "Dog L";
+    }
+    50% {
+        content: "Dog ";
+    }
+    51% {
+        content: "Dog";
+    }
+    52% {
+        content: "Do";
+    }
+    53% {
+        content: "D";
+    }
+    57% {
+        content: "D";
+    }
+    58% {
+        content: "De";
+    }
+    59% {
+        content: "Ded";
+    }
+    60% {
+        content: "Dedi";
+    }
+    61% {
+        content: "Dedic";
+    }
+    62% {
+        content: "Dedica";
+    }
+    63% {
+        content: "Dedicat";
+    }
+    64% {
+        content: "Dedicate";
+    }
+    65% {
+        content: "Dedicated";
+    }
+    66% {
+        content: "Dedicated ";
+    }
+    67% {
+        content: "Dedicated W";
+    }
+    68% {
+        content: "Dedicated Wo";
+    }
+    69% {
+        content: "Dedicated Wor";
+    }
+    70% {
+        content: "Dedicated Work";
+    }
+    71% {
+        content: "Dedicated Worke";
+    }
+    72% {
+        content: "Dedicated Worker";
+    }
+    80% {
+        content: "Dedicated Worker";
+    }
+    81% {
+        content: "Dedicated Worke";
+    }
+    82% {
+        content: "Dedicated Work";
+    }
+    83% {
+        content: "Dedicated Wor";
+    }
+    84% {
+        content: "Dedicated Wo";
+    }
+    85% {
+        content: "Dedicated ";
+    }
+    86% {
+        content: "Dedicated";
+    }
+    87% {
+        content: "Dedicate";
+    }
+    88% {
+        content: "Dedicat";
+    }
+    89% {
+        content: "Dedica";
+    }
+    90% {
+        content: "Dedic";
+    }
+    91% {
+        content: "Dedi";
+    }
+    92% {
+        content: "Ded";
+    }
+    93% {
+        content: "De";
+    }
+    94% {
+        content: "D";
+    }
+    100% {
+        content: "D";
+    }
+}
